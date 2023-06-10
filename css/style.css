@@ -1,0 +1,11 @@
+body {
+    font-family: "Courier New", monospace;
+    background-color: #2b2d42;
+    color: #ffffff;
+  }
+  
+  /* Centre-align headings */
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+  
