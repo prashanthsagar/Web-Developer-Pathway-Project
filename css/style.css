@@ -1,11 +1,186 @@
+*{  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: "Courier New", monospace;
     background-color: #2b2d42;
-    color: #ffffff;
+    color:#eceada;
+    background-image: linear-gradient(to bottom , rgba(53, 52, 55, 0.602), rgba(53, 52, 55, 0.602)), url(../images/concrete.avif);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
   }
   
   /* Centre-align headings */
   h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
+  /* DESKTOP LAYOUT*/
+
+/*navigation bar*/
+ #navigation-bar{
+  position:relative;
+}
+
+#navigation-bar nav{
+ display:inline;
+ letter-spacing: 2px;
+ position:absolute;
+ top:20%;
+ left:65%;   
+}
+#navigation-bar a{
+ padding:10px;
+}
+#navigation-bar a:link , #navigation-bar a:visited{
+ color:#eceada;
+}
+
+#navigation-bar a:active{
+ color:#0a82a8;
+}
+/* statement*/
+#statement{
+ text-align: center;
+ padding-right: 100px;
+ padding-left: 100px;
+ 
+}
+
+#primary-stat , #secondary-stat{
+ display:block;
+ color:#0a82a8;
+ letter-spacing: 8px;
+ font-size: 2.8em;
+ text-transform: uppercase;
+ text-shadow:  2px 3px 2px black;
+ font-family: 'Libre Bodoni', serif; 
+ font-weight: 700;
+ line-height: 130px;
+}
+
+/*primary statement animation*/
+#primary-stat{
+ animation-name:moveInRight;
+ animation-duration: 3s;
+ animation-timing-function: ease-in;
+}
+
+@keyframes moveInRight {
+
+ 0%{ opacity: 0%;
+     transform: translateX(100px);
+   }
+ 
+  80%{ transform: translate(-20px);
+     }
+
+  100%{ opacity: 1;
+        transform: translateX(0px);
+     } 
+}
+/*secondary statement animation*/
+#secondary-stat{
+ animation-name:moveInLeft;
+ animation-duration: 3s;
+ animation-timing-function: ease-in;
+
+}
+
+@keyframes moveInLeft {
+
+ 0%{ opacity: 0%;
+     transform: translateX(-100px);
+   }
+ 
+  80%{ transform: translate(20px);
+   }
+
+  100%{ opacity: 1;
+        transform: translateX(0px);
+      } 
+}
+
+/*third statement animation*/
+#third-stat{
+ margin: top 20px;
+ line-height: 30px;;
+ animation-name: fadeIn;
+ animation-duration:3s;
+ animation-timing-function: ease-in;
+ font-size: 0.8em;
+ font-weight: 700;
+}
+@keyframes fadeIn{
+  0%{
+      opacity: 0;    
+  }
+  50%{ opacity : 0;
+      }
+
+  100%{
+     opacity: 1;
+     }
+}
+
+/* FACILITIES SECTION*/
+#facilities{
+   width:80vw;
+
+}
+#tech-content{
+  margin-top: 100px;
+  font-size: 1em;
+  text-align: center;
+  width: 80vw;
   
+  margin-left: 100px;
+  margin-right: 100px;
+}
+ 
+#weight-content{
+ 
+  margin-top: 45px;
+  max-width: 40%;
+  
+  
+}
+
+#pool-content{
+
+  margin-top:45px;
+  max-width:40%;
+ 
+ 
+}
+
+#gym-flex{
+  margin-right:100px;
+  margin-left: 100px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content: space-around;
+  align-content: center;
+  margin: auto;
+  width: 100vw;
+}
+.fig-caption {
+         
+         margin-top: 15px;
+         line-height: 20px;;
+         font-size: 1em;
+         letter-spacing: 1.5px;
+         width: 100%;
+         text-align: center;
+         
+}
+
+
+
+/* LAPTOP LAYOUT */
+
+
+/* PHONE LAYOUT */

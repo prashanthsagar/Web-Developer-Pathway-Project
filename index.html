@@ -12,19 +12,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Bodoni:wght@400;600;700&display=swap" rel="stylesheet">
+
 	<script src="scripts/script.js"></script>
 	
 </head>
 
 <body>
 
-    <header>
-    <h3>Cork Inner City Fitness Centre strives to create a peaceful and relaxing environment in which its members can work out and realise and achieve their fitness and wellness goals.</h3>
-	</header>
-	
+    <header id="navigation-bar">
+        <!--Header element-->
+        <img class="logo" src="images/logo.svg" width="250" height="250" alt="logo image"> 
+        <nav>
+            <a href="#">Classes</a>
+            <a href="#">Membership</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    <!--STATEMENT SECTION-->
+    <div id="statement">
+        <h1 class="statement">
+         <span id="primary-stat">Cork Inner City</span>
+         <span id="secondary-stat">Fitness Centre</span>
+          <span id="third-stat">strive to create a peaceful and relaxing environment in
+         which its members can work out and realise and achieve their fitness and wellness
+         goals.</span>
+        </h1>
+      </div>
+	<!--FACILITIES SECTION-->
 	<div id="facilities">
-		<!-- Pool, Tech, Weights -->
-	</div>
+		    <section id="tech-content">
+                  <h3>Our gym has the most up-to-date technology to ensure you are getting the most from your workouts.
+                   Our 100-station gym uses the world renowned TechnoGym technology, with its evolutionary Key System, which
+                    stores individual programmes and workout history on a personal Techno gym key.
+                  </h3>
+             </section>
+             <div id="gym-flex">
+                 <figure id="weight-content">
+                 <img id="weight" src="images/gym-equipment.jpg" alt="picture of gym equipment" width="500"height="400">
+                     <figcaption class="fig-caption">Selection of free weights and fixed weights.
+                     </figcaption>   
+                </figure>     
+                <figure id="pool-content">  
+                 <img id="pool" src="images/pool.jpeg" alt="picture of a swimmer" width="500" height="400">
+                     <figcaption class="fig-caption">Our 18-metre pool is kept at a constant,
+                        comfortable temperature
+                         with dedicated swim
+                        lanes. After yourswim, why not relax in our
+                        jacuzzi, sauna, steam room or spa pool.
+                     </figcaption>
+                </figure>
+            </div>
+    </div>
 	
 	<div id="classes">
 		<!-- maybe to page -->	
