@@ -90,6 +90,30 @@
 	
 	<div id="contactus">
 		<!-- Contact us etc. -->
+		<h2>Contact Us</h2>
+		<p>Please enter your details below and we'll reply to you as soon as possible.</p>
+		<form action="mailto:admin@corkinnercitygym.ie?subject=Contact%20Form" method="post" enctype="text/plain">
+			<table>
+				<tr>
+				<td><label for="name">Name:</label></td>
+				<td><input type="text" id="name" name="name" required></td>
+				</tr>
+				<tr>
+					<td><label for="phone">Phone Number:</label></td>
+					<td><input type="tel" id="phone" name="phone"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email Address:</label></td>
+					<td><input type="email" id="email" name="email" required></td>
+				</tr>
+				<tr>
+					<td><input type="reset" value="Clear"></td>
+					<td><input type="submit" value="Send Email"></td>
+				</tr>
+
+		    </table>
+		    <br>
+		  </form>
 	</div>
 
 
