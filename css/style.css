@@ -178,7 +178,18 @@ body {
          
 }
 
-
+#contactus{
+ 
+    margin-top: 45px;
+    margin-left: 100px;
+    margin-right: 100px;      
+}
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Adjust the height if needed */
+  }
 
 /* LAPTOP LAYOUT */
 
