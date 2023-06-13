@@ -177,6 +177,30 @@ body {
          text-align: center;
          
 }
+.hover-effect {
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .hover-effect:hover {
+      transform: scale(1.1);
+      filter: brightness(110%);
+    }
+
+#coffee{
+	   width:80vw;
+	   margin-left: 100px;
+}
+
+#coffee-flex{
+  margin-right:100px;
+  margin-left: 100px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content: space-around;
+  align-content: center;
+  margin: auto;
+  width: 60vw;
+}
 
 #contactus{
  
