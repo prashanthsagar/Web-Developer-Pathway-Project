@@ -3,3 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h1{
+    text-align: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    min-height: 100vh;
+    background-color: azure;
+    line-height: 1cm;
+}
+
+p{
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: silver;
+    color: black;
+    margin-top: auto;
+  }
