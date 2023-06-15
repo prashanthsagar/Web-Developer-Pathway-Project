@@ -15,6 +15,9 @@ function myFunction(imgs) {
     break;
   case "Clive":
 	imgText.innerHTML = document.getElementById("text-Clive").innerHTML;
+    break;  
+  case "Valentina":
+	imgText.innerHTML = document.getElementById("text-Valentina").innerHTML;
     break;
   case "Natalie":
 	imgText.innerHTML = document.getElementById("text-Natalie").innerHTML;
