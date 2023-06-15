@@ -189,8 +189,9 @@ body {
 }
 
 .column img {
-  opacity: 0.8; 
-  cursor: pointer; 
+	width:200px;
+	opacity: 0.8; 
+  	cursor: pointer; 
 }
 
 .column img:hover {
