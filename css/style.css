@@ -144,16 +144,17 @@ body {
  
   margin-top: 45px;
   max-width: 40%;
-  
-  
 }
 
 #pool-content{
 
   margin-top:45px;
   max-width:40%;
- 
- 
+}
+#pool , #weight{
+  max-width: 100%;
+  height:auto;
+  border-radius: 10px;
 }
 
 #gym-flex{
@@ -286,6 +287,129 @@ body {
     align-items: center;
     height: 10vh; /* Adjust the height if needed */
   }
+/*MEMBERSHIP SECTION*/
+#membership{
+  margin-top: 80px;
+
+}
+#membership h1{
+   text-transform: uppercase;
+}
+#membership-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+
+.membership-style{
+     
+     margin: 50px;
+     width: 400px;
+     height:300px;
+     text-align: center;
+     line-height: 40px;
+}
+.membership-style li{
+     list-style-type: none;
+     font-size: 1.em;
+     letter-spacing: 1.5px;
+     font-weight: bold;
+
+}
+.membership-style ul{
+  margin-top: 10px;
+}
+
+.button-style{
+  margin-top:40px ;
+  background-color: #0a82a8;
+  width:220px;
+  height:40px;
+  border-radius: 50px;
+  font-size:1.10em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border:none;
+  box-shadow: 0 3px #2b2d42;
+  color:#eceada
+}
+.button-style:active{
+   background-color: #0a82a8;
+   box-shadow:0 1px #2b2d42; 
+   transform: translateX(2px);
+}
+#enquiry-membership button{
+  display: block;
+   margin:auto;
+}
+
+/*MEMBERSHIP PAGE*/
+#membership-slogan-container{
+  margin-right:20px;
+  margin-left:20px;
+  height: auto;
+  display:flex;
+  flex-direction: row;
+}
+#slogan-image{
+  width:50%;
+  height: auto;
+  border-radius: 5px;
+
+}
+#membership-slogan-container h3{
+margin:auto;
+
+}
+#first-slogan-content{
+ font-size: 2.6em;
+ text-align:left;
+ margin-top: auto;
+ margin-bottom: auto;
+
+}
+#second-slogan-content{
+  padding-top: 50px;
+  font-size: 1.6em;;
+}
+
+
+.membership-page-container{
+  margin: 50px 20px 20px 20px; 
+}
+.membership-page-style{
+  list-style-type: disc;
+     line-height: 30px;
+     font-weight: 500;
+     margin-left:30px;
+     max-width: 75%px;
+     
+
+}
+.membership-page-style .first-membership{
+     font-size:1.5em;
+     color: #0a82a8;
+     text-shadow: 1px 1px  black;
+           
+}
+.membership-page-style .second-membership{
+  font-size:0.8em;
+  font-weight:300      
+}
+.membership-page-style table{
+  font-weight: 600;
+  color:black;
+}
+.membership-page-style th{
+   text-align:left;
+   font-weight: 600;
+} 
+.membership-page-style td{
+  text-align: end;
+  font-weight: 600;
+}
+
+
 
 /* TABLET LAYOUT */
 @media (min-width: 768px) and (max-width: 1024px) {
