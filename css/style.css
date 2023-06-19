@@ -248,6 +248,13 @@ body {
 	 width: 100%;
 }
 
+/* OPENING HOURS */
+
+#enquiry-opennow button{
+  display: block;
+   margin:auto;
+}
+
 
 /* COFFEE SECTION */
 
