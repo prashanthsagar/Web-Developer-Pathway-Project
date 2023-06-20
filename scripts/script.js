@@ -29,6 +29,44 @@ function myFunction(imgs) {
   expandImg.parentElement.style.display = "block";
 }
 
+function showVid(classIs) {
+  var ClassVidVideo = document.getElementById("classVid");
+  var ClassScrollText = document.getElementById("classScroll");
+  switch (classIs) {
+  case "yoga":
+	ClassScrollText.innerHTML = "YOGA - Connect your physical body to your mind through movements and breathing";
+	ClassVidVideo.src="images/yoga.mp4"
+    break;
+  case "taichi":
+	ClassScrollText.innerHTML = "TAI CHI (太极) - Flowing Chinese exercise brings harmony to your mind, body and spirit";
+	ClassVidVideo.src="images/taichi.mp4"
+    break;
+  case "pilates":
+	ClassScrollText.innerHTML = "PILATES - Helps build flexibility, muscle strength, and endurance";
+	ClassVidVideo.src="images/pilates.mp4"
+    break;
+  case "spin":
+	ClassScrollText.innerHTML = "SPIN TRAINING - Aerobic class designed to burn calories on stationary bikes";
+	ClassVidVideo.src="images/spin.mp4"
+    break;
+  case "aquagym":
+	ClassScrollText.innerHTML = "AQUAGYM - Low impact exercises for joints and mobility";
+	ClassVidVideo.src="images/spin.mp4"
+    break;
+  case "swim":
+	ClassScrollText.innerHTML = "SWIMMING - Beginners and improvers, enhances fitness, strength, and relaxation";
+	ClassVidVideo.src="images/pool.mp4"
+    break;
+  case "circuit":
+	ClassScrollText.innerHTML = "CIRCUIT TRAINING - Exercise stations for burning calories and increasing muscle tone";
+	ClassVidVideo.src="images/circuit.mp4"
+    break;
+  default:
+    console.log("Invalid input id");
+    break;
+}
+}
+
 
 
 function OpenNow(){
