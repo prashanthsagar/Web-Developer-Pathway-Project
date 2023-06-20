@@ -27,17 +27,21 @@
         <!--Header element-->
         <img class="logo" src="images/logo.svg" width="250" height="250" alt="logo image"> 
         <nav>
-            <a href="#">Classes</a>
-            <a href="membership.html">Membership</a>
-            <a href="#contactus">Contact Us</a>
-        </nav>
+		<a href="#facilities">Facilities</a>
+	        <a href="#classes">Classes</a>
+		<a href="#trainers">Trainers</a>
+            	<a href="membership.html">Membership</a>
+		<a href="#opening">Opening Hours</a>
+		<a href="#coffee">Lee Coffee Shop</a>
+            	<a href="#contactus">Contact Us</a>        
+	</nav>
     </header>
     <!--STATEMENT SECTION-->
     <div id="statement">
         <h1 class="statement">
          <span id="primary-stat">Cork Inner City</span>
          <span id="secondary-stat">Fitness Centre</span>
-          <span id="third-stat">strive to create a peaceful and relaxing environment in
+          <span id="third-stat">strives to create a peaceful and relaxing environment in
          which its members can work out and realise and achieve their fitness and wellness
          goals.</span>
         </h1>
@@ -68,9 +72,27 @@
             </div>
     </div>
 	
-	<div id="classes">
-		<!-- maybe to page -->	
-	</div>
+<div id="classes">
+	<br><br><hr>	
+	<br><br><br><br>
+	<h1>CLASSES</h1>	
+	<h3>Each week, we offer a variety of fitness, swimming, and wellbeing classes.</h3>
+	<button type="button" class="button-style" onclick="showVid('yoga')">Yoga</button>
+	<button type="button" class="button-style" onclick="showVid('taichi')">Tai Chi</button>
+	<button type="button" class="button-style" onclick="showVid('pilates')">Pilates</button>
+	<button type="button" class="button-style" onclick="showVid('spin')">Spinning</button>
+	<button type="button" class="button-style" onclick="showVid('aquagym')">Aquagym</button>
+	<button type="button" class="button-style" onclick="showVid('swim')">Swimming</button>
+	<button type="button" class="button-style" onclick="showVid('circuit')">Circuit Training</button>
+	<br><br>
+	<div id="videos" style="display:flex; justify-content:center; align:center">
+		<div class="video-container">
+			<video id="classVid" src="images/yoga.mp4" autoplay loop width="800px" muted></video> 
+			<div id="classScroll" class="scrolling-text">YOGA - Connect your physical body to your mind through movements and breathing.</div>
+		</div>
+	</div>	
+</div>
+
 
 		<div id="trainers">
 	<br><br><br><br>	
@@ -166,7 +188,7 @@
 		<br>
 		<br>
 		<br>
-		<h1>Opening Hours:</h1>
+		<h1>OPENING HOURS:</h1>
 		<h3>Monday to Friday: 6.00am to 10.00pm</h3>
 		<h3>Saturday, Sunday & Bank Holidays: 8.00am to 9.00pm</h3>
 		<br><br>
@@ -188,7 +210,7 @@
 		<!-- Coffee Shop -->
 		<br><br>
 		<br><br>	
-		<h1>Lee Coffee Shop</h1> 
+		<h1>LEE COFFEE SHOP</h1> 
 		<br>
 	    <section id="coffee-content">
             <h3>Indulge in the exquisite pleasure of our barista-made coffee, a delightful reward that awaits you after an invigorating workout in our state-of-the-art gym. 
@@ -223,7 +245,7 @@
 	<div id="contactus">
 		<!-- Contact us etc. -->
 		<br><br>
-		<h2>Contact Us</h2>
+		<h2>CONTACT US</h2>
 		<br>
 		<p style="text-align: center;">Please enter your details below and we'll reply to you as soon as possible.</p>
 		<br>
