@@ -195,6 +195,25 @@ body {
    margin: 10px;
 }
 
+.classes-button-style{
+  margin-top:40px ;
+  background-color: #0a82a8;
+  width:200px;
+  height:40px;
+  border-radius: 50px;
+  font-size:1.10em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border:none;
+  box-shadow: 0 3px #2b2d42;
+  color:#eceada
+}
+.classes-button-style:active{
+   background-color: #0a82a8;
+   box-shadow:0 1px #2b2d42; 
+   transform: translateX(2px);
+}
+
 .video-container {
  position: relative;
   width: 800px;
