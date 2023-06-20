@@ -22,6 +22,7 @@ body {
 /*navigation bar*/
  #navigation-bar{
   position:relative;
+  
 }
 
 #navigation-bar nav{
@@ -29,10 +30,13 @@ body {
  letter-spacing: 2px;
  position:absolute;
  top:20%;
- left:35%;   
+ left:55%;   
+ margin-left: 10px;
+
 }
 #navigation-bar a{
- padding:10px;
+ padding:5px;
+ display:inline-block;
 }
 #navigation-bar a:link , #navigation-bar a:visited{
  color:#eceada;
@@ -135,22 +139,19 @@ body {
   font-size: 1em;
   text-align: center;
   width: 80vw;
-  
+  font-weight: bold;
   margin-left: 100px;
   margin-right: 100px;
 }
  
-#weight-content{
+#weight-content ,#pool-content {
  
   margin-top: 45px;
   max-width: 40%;
+  font-weight: bold;
 }
 
-#pool-content{
 
-  margin-top:45px;
-  max-width:40%;
-}
 #pool , #weight{
   max-width: 100%;
   height:auto;
@@ -180,6 +181,20 @@ body {
 }
 
 /* CLASSES SECTION */
+#classes h1{
+  margin-bottom:10px;
+}
+
+#classes-button-container {
+  margin-top: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right:auto;
+}
+#classes-button-container button{
+   margin: 10px;
+}
+
 .video-container {
   position: relative;
   width: 80%;
@@ -224,7 +239,8 @@ body {
 }
 
 .column img {
-	width:200px;
+	width:100%;
+  height:auto;
 	opacity: 0.8; 
   	cursor: pointer; 
 }
@@ -252,8 +268,17 @@ body {
 /* Expanding image text */
 #imgtext {
   left: 15px;
-  color: white;
-  font-size: 20px;
+  color:#eceada;
+  font-size: 1em;
+}
+#expandedImg{/*inline style from html*/
+  width:22%;
+  height:auto;
+  
+}
+#trainerBio ,#expandedImg {/*inline style from html*/
+  margin-left:10%;
+
 }
 
 /* Closable button inside the expanded image */
@@ -270,12 +295,12 @@ body {
 /*      display: flex;  
       justify-content: center;
       align-items: center;   */
-	  width:80%; 
+	  width:100%; 
 	  float:both;
 }
 
 .container caption {	
-	text-align: left;
+	 text-align: left;
 	 margin-top: 15px;
 	 line-height: 20px;
 	 font-size: 1em;
@@ -288,6 +313,12 @@ body {
 #enquiry-opennow button{
   display: block;
    margin:auto;
+}
+#opening h3{
+   line-height: 40px;;
+}
+#opening h1{
+  margin-bottom: 20px;
 }
 
 
@@ -303,19 +334,33 @@ body {
 
 #coffee{
 	   width:80vw;
-	   margin-left: 100px;
+	   margin:auto;
+}
+#coffee-content img{
+  width:100%;
+  height:auto;
+}
+#coffee-content figure{
+       margin-left: 10px;
+       margin-right: 10px;
+
+}
+#coffee-content figcaption{
+  font-weight: bold;
+  font-size: 1em;
 }
 
 #coffee-flex{
-  margin-right:100px;
-  margin-left: 100px;
+  /*margin-right:100px;
+  margin-left: 100px;*/
   display:flex;
   flex-direction: row;
   flex-wrap:nowrap;
   justify-content: space-around;
   align-content: center;
   margin: auto;
-  width: 60vw;
+  width: 80vw;
+
 }
 
 /*CONTACT US SECTION*/
@@ -458,7 +503,81 @@ margin:auto;
 /* TABLET LAYOUT */
 @media (min-width: 768px) and (max-width: 1024px) {
   /* CSS rules for tablet devices */
-}
+ /*header*/
+
+  /*statement*/
+  #statement{
+    padding-right: 80px;
+    padding-left: 80px;
+    }
+   
+   #primary-stat , #secondary-stat{
+    letter-spacing: 4px;
+    font-size: 1.8em;
+    text-shadow:  2px 3px 2px black;
+    line-height: 55px;
+   }
+   #third-stat{
+    margin: top 20px;
+    line-height: 8px;;
+    font-size: 0.5em;
+    font-weight: 700;
+   }
+    /*Facilities*/
+   
+    #tech-content{
+      margin-top: 40px;
+      font-size: 1em;
+    }
+     
+    #weight-content{
+      margin-top: 40px;
+    }
+    
+    #pool-content{
+      margin-top:40px;
+      max-width:40%;
+    }
+    
+    #gym-flex{
+      margin-right:80px;   
+    }
+    .fig-caption { 
+             margin-top: 7px;
+             line-height: 20px;;
+             font-size: 1em;
+    }
+  /*Classes*/
+  #classes-button-container {
+    border:2px solid red;
+  }
+  }
+  #classes h3{
+    font-size:1em;
+  }
+  .video-container {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-left: 60px;
+  }
+  
+  .video-container video {
+    width: 80%;
+    height: auto;
+  }
+  
+  .scrolling-text {
+    color: #ffffff;/* to change*/
+    font-size: 3em;/*cambiare em in desktop*/
+    top: -15%;/*altezza??*/
+    left: 50%;
+    transform: translate(-50%, -50%);/**/
+  }
+  /*TRAINERS*/
+
+
+
 
 /* PHONE LAYOUT */
 @media (max-width: 768px) {
