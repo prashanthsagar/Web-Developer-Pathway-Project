@@ -29,7 +29,7 @@ body {
  letter-spacing: 2px;
  position:absolute;
  top:20%;
- left:65%;   
+ left:35%;   
 }
 #navigation-bar a{
  padding:10px;
@@ -179,6 +179,41 @@ body {
          
 }
 
+/* CLASSES SECTION */
+.video-container {
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin-left: 60px;
+}
+
+.video-container video {
+  width: 80%;
+  height: auto;
+}
+
+.scrolling-text {
+  font-family: "Courier New", monospace;
+  color: #ffffff;
+  font-size: 100px;
+  position: relative;
+  height: 100px;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: scrollText 20s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(80%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+
 
 /* TRAINERS SECTION */
 .column {
@@ -283,6 +318,7 @@ body {
   width: 60vw;
 }
 
+/*CONTACT US SECTION*/
 #contactus{
  
     margin-top: 45px;
