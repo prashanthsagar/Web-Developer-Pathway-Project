@@ -51,7 +51,7 @@ function showVid(classIs) {
     break;
   case "aquagym":
 	ClassScrollText.innerHTML = "AQUAGYM - Low impact exercises for joints and mobility";
-	ClassVidVideo.src="images/spin.mp4"
+	ClassVidVideo.src="images/aquagym.mp4"
     break;
   case "swim":
 	ClassScrollText.innerHTML = "SWIMMING - Beginners and improvers, enhances fitness, strength, and relaxation";
