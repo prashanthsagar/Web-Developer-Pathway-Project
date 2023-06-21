@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>CICFC Membership</title>
+    <script src="https://kit.fontawesome.com/7a454b05fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="navigation-bar">
@@ -63,47 +64,47 @@
               </div>
          </section>
          <section id="enquiry">
-
-            <div id="contactus">
-                <!-- Contact us etc. -->
-                <br><br>
-                <h2>Contact Us</h2>
-                <br>
-                <p style="text-align: center;">Please enter your details below and we'll reply to you as soon as possible.</p>
-                <br>
-		<form action="mailto:admin@corkinnercitygym.ie?subject=Contact%20Form" method="post" enctype="text/plain" target="_blank">
-			<div class="table-container"> 
-        	<table>
-				<tr>
-					<td><label for="name">Name:</label></td>
-					<td><input type="text" id="name" name="name" required></td>
-				</tr>
-				<tr>
-					<td><label for="phone">Phone Number:</label></td>
-					<td><input type="tel" id="phone" name="phone"></td>
-				</tr>
-				<tr>
-					<td><label for="email">Email Address:</label></td>
-					<td><input type="email" id="email" name="email" required></td>
-				</tr>
-				<tr>
-					<td><label for="email">Enquiry:</label></td>
-					<td><input type="textarea" id="enquiry" name="enquiry"></td>
-				</tr>
-				<tr>
-				</tr>
-				<tr>
-				</tr>
-				<tr>
-				</tr>
-					<td><input type="reset" value="Clear"></td>
-					<td><input type="submit" value="Send Email"></td>
-				</tr>
-			</table>
-			</div>
-		</form>
-            <br>
-              </div>
+            <h2>CONTACT US</h2>
+	
+            <p style="text-align: center;">Please enter your details below and we'll reply to you as soon as possible.</p>
+            
+            <form action="mailto:admin@corkinnercitygym.ie?subject=Contact%20Form" method="post" enctype="text/plain" target="_blank">
+                
+                    
+                        <label for="name">Name:</label>
+                        <input type="text" class="data" id="name" name="name" required placeholder="Write your name">
+                    
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" class="data" id="phone" name="phone" placeholder="Write your phone numnber">
+                        <label for="email">Email Address:</label>
+                        <input type="email" class="data"id="email" name="email" required placeholder="Write your email">
+                        <label for="email">Enquiry:</label>
+                        <input type="textarea" class="data-text"id="enquiry" name="enquiry" placeholder="Write your message" rows="10">
+                    <div id="contactus-button">
+                        <input class="contactus-send" type="reset" value="Clear">
+                        <input class="contactus-send" type="submit" value="Send Email">
+                    </div>
+            
+            </form>	
+            
+          </div>
+    
+    <footer>
+        
+        <div id="tel-email">
+            <h4><i class="fa-solid fa-phone"></i>001 1234 567 </h4>
+            <h4><i class="fa-solid fa-envelope" ></i>admin@corkinnercitygym.ie</h4>
+          </div>
+          <div id="address">
+            <h4>Address:</h4>
+            <h4>110 Main Street </h4>
+            <h4> C03 25DE , Cork</h4>
+          </div>
+          
+    
+    </footer>
+    
+    
            
          </section>
 
