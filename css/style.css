@@ -4,13 +4,13 @@
 }
 
 body {
-    font-family: "Courier New", monospace;
-    background-color: #2b2d42;
-    color:#eceada;
-    background-image: linear-gradient(to bottom , rgba(53, 52, 55, 0.602), rgba(53, 52, 55, 0.602)), url(../images/concrete.avif);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: top;
+     font-family: "Courier New", monospace;
+     background-color: #2b2d42;
+     color:#eceada;
+     background-image: linear-gradient(to bottom , rgba(53, 52, 55, 0.602), rgba(53, 52, 55, 0.602)), url(../images/concrete.avif);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
   }
   
   /* Centre-align headings */
@@ -407,7 +407,6 @@ form{
   margin-left:auto;
   margin-right:auto;
   margin-top:0px;
-  color:red;
   font-family: 'Courier New', Courier, monospace;
 }
  form label{
@@ -610,8 +609,92 @@ margin:auto;
   text-align: end;
   font-weight: 600;
 }
+/*CLASSES PAGE*/
+#timetable-title h2{
+       font-size: 2.8em;
+       font-weight: bold;
+       text-transform: uppercase;
+       background-color: #0a82a8;
+}
+#timetable-title h3{
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-style: oblique;
+  background-color: #2b2d42;
+}
+
+#timetable-external-container{
+  width:80%;
+  margin-left: auto;
+  margin-right:auto;
+  background-color: #eceada;
+
+}
 
 
+#timetable-title .first{
+  color: rgb(225, 203, 59);
+
+}
+
+
+/*TIMETABLE*/
+.timetable-day{
+  border-collapse:collapse;
+  margin:10px;
+  border-radius: 3px;
+  
+}
+
+.timetable-day tr{
+ border-bottom: 1px solid black
+}
+
+.day , .hour , .activity{
+  font-size: 1em;
+  font-weight: 300;
+  background-color: #2b2d42;
+  
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+  
+}
+.day{
+   font-weight: bold;
+   color:#0a82a8;
+}
+#timetable-container{
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-template-rows: repeat( 2 , 1fr);
+  grid-area: "monday tuesday wednesday"
+             "thurday friday saturday";        
+
+}
+.monday{
+  grid-area: monday ;
+}
+.tuesday{
+  grid-area: tuesday ;
+}
+.wednesday{
+  grid-area: wednesday ;
+}
+.thurday{
+  grid-area: thursday ;
+}
+.friday{
+  grid-area: friday ;
+}
+.saturday{
+  grid-area: saturday ;
+}
+#timetble-day{
+  margin: 30px;
+}
 
 /* TABLET LAYOUT */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -661,10 +744,7 @@ margin:auto;
              font-size: 1em;
     }
   /*Classes*/
-  #classes-button-container {
-    border:2px solid red;
-  }
-  
+   
   #classes h3{
     font-size:1em;
   }

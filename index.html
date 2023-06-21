@@ -9,6 +9,10 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="Gym,Fitness center,Gym Cork,Pool Cork,Fitness Classes,Personal trainer,Tech Gym">
+	<meta name="author" content="Patrick Dunne,Valentina Piano">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="css/style.css">
@@ -28,12 +32,11 @@
         <!--Header element-->
         <img class="logo" src="images/logo.svg" width="250" height="250" alt="logo image"> 
         <nav>
-		<a href="#facilities">Facilities</a>
 	        <a href="">Classes</a>
-		<a href="#trainers">Trainers</a>
+			<a href="classes.html">Timetable</a>
+		
             	<a href="membership.html">Membership</a>
-		<a href="#opening">Opening Hours</a>
-		<a href="#coffee">Lee Coffee Shop</a>
+		
             	<a href="#contactus">Contact Us</a>        
 	</nav>
     </header>
@@ -57,7 +60,7 @@
              </section>
              <div id="gym-flex">
                  <figure id="weight-content">
-                 <img id="weight" src="images/gym-equipment.jpg" alt="picture of gym equipment" width="500"height="400">
+                 <img id="weight" src="images/gym-equipment.jpg" alt="picture of gym equipment" width="500" height="400">
                      <figcaption class="fig-caption">Selection of free weights and fixed weights.
                      </figcaption>   
                 </figure>     
@@ -88,9 +91,9 @@
 	    <button type="button" class="classes-button-style" onclick="showVid('circuit')">Circuit Training</button>
     </div>
 	<br><br>
-	<div id="videos" style="display:flex; justify-content:center; align:center">
+	<div id="videos" style="display:flex; justify-content:center;">
 		<div class="video-container">
-			<video id="classVid" src="images/yoga.mp4" autoplay loop width="800px" muted></video> 
+			<video id="classVid" src="images/yoga.mp4" autoplay loop width="800" muted></video> 
 			<div id="classScroll" class="scrolling-text">YOGA - Connect your physical body to your mind through movements and breathing.</div>
 		</div>
 	</div>	
@@ -110,30 +113,30 @@
 
 		<div class="row">
 			<div class="column">
-				<img src="images/aoife.jpg" alt="Aoife" width="200px" height="200px" onclick="myFunction(this);">
+				<img src="images/aoife.jpg" alt="Aoife" width="200" height="200" onclick="myFunction(this);">
 				<div class="caption">Aoife</div>
 			</div>
 			<div class="column">
-				<img src="images/geoff.jpg" alt="Geoff" width="200px" height="200px" onclick="myFunction(this);">
+				<img src="images/geoff.jpg" alt="Geoff" width="200" height="200" onclick="myFunction(this);">
 				<div class="caption">Geoff</div>
 			</div>
 			<div class="column">
-				<img src="images/lucy.jpg" alt="Lucy" width="200px" height="200px" onclick="myFunction(this);">
+				<img src="images/lucy.jpg" alt="Lucy" width="200" height="200" onclick="myFunction(this);">
 				<div class="caption">Lucy</div>
 			</div>
 			<div class="column">
-				<img src="images/clive.jpg" alt="Clive" width="200px" height="200px" onclick="myFunction(this);">
+				<img src="images/clive.jpg" alt="Clive" width="200" height="200" onclick="myFunction(this);">
 				<div class="caption">Clive</div>
 			</div>
 			<div class="column">
-				<img src="images/valentina.jpg" width="200px" height="200px" alt="Valentina" onclick="myFunction(this);">
+				<img src="images/valentina.jpg" width="200" height="200" alt="Valentina" onclick="myFunction(this);">
 				<div class="caption">Valentina</div>
 			</div>
 		</div>
 		
 		<div class="container">
 <!--			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>   -->
-			<img id="expandedImg" >
+			<img id="expandedImg" alt="" >
 			<p class="caption" id="trainerBio"></p>
 		</div>
 
@@ -222,8 +225,8 @@
 				  <br><br>
              <div id="coffee-flex">
 				<figure>
-                 <img id="barista" src="images/barista.jpg" alt="Barista making delicious coffee" title="Hover to see coffee menu" width="550px" height="275px">
-                 <img class="hover-effect" id="coffeemenu" src="images/coffeemenu.jpg" alt="Our coffee menu" title="Hover to see coffee menu" width="550px" height="379px">
+                 <img id="barista" src="images/barista.jpg" alt="Barista making delicious coffee" title="Hover to see coffee menu" width="550" height="275">
+                 <img class="hover-effect" id="coffeemenu" src="images/coffeemenu.jpg" alt="Our coffee menu" title="Hover to see coffee menu" width="550" height="379">
 				  <figcaption class="fig-caption">
 				  Whether you prefer a velvety latte, a bold <br>
 				  espresso, or a creamy cappuccino, our coffee<br>
@@ -232,8 +235,8 @@
                   </figcaption>
 				</figure>
 				<figure>
-				<img id="pastry" src="images/pastry.jpg" alt="Delicious pastries" title="Hover to see pastry menu" width="550" height="275px">
-				<img class="hover-effect" id="pastrymenu" src="images/pastrymenu.jpg" alt="Our pastry menu" title="Hover to see pastry menu" width="550px" height="379px">
+				<img id="pastry" src="images/pastry.jpg" alt="Delicious pastries" title="Hover to see pastry menu" width="550" height="275">
+				<img class="hover-effect" id="pastrymenu" src="images/pastrymenu.jpg" alt="Our pastry menu" title="Hover to see pastry menu" width="550" height="379">
 				<figcaption class="fig-caption">
 				 Our freshly-baked morning pastries are an <br>
 				 affordable but luxurious treat. Made on<br> 
@@ -260,9 +263,9 @@
 					<label for="phone">Phone Number:</label>
 					<input type="tel" class="data" id="phone" name="phone" placeholder="Write your phone numnber">
 					<label for="email">Email Address:</label>
-					<input type="email" class="data"id="email" name="email" required placeholder="Write your email">
+					<input type="email" class="data" id="email" name="email" required placeholder="Write your email">
 					<label for="email">Enquiry:</label>
-					<input type="textarea" class="data-text"id="enquiry" name="enquiry" placeholder="Write your message" rows="10">
+					<textarea class="data-text" id="enquiry" name="enquiry" placeholder="Write your message" rows="10"></textarea>
 				<div id="contactus-button">
 					<input class="contactus-send" type="reset" value="Clear">
 					<input class="contactus-send" type="submit" value="Send Email">
