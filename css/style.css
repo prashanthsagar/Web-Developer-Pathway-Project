@@ -634,7 +634,7 @@ margin:auto;
   text-align: end;
   font-weight: 600;
 }
-/*CLASSES PAGE*/
+/*TIMETABLE PAGE*/
 #timetable-title h2{
        font-size: 2.8em;
        font-weight: bold;
@@ -935,6 +935,56 @@ hr{
   margin-bottom: 20px;
   line-height: 35px;
 }
+ /*TIMETABLE PAGE*/
+
+ #timetable-title h2{
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #0a82a8;
+}
+#timetable-title h3{
+font-size: 1.2em;
+text-transform: uppercase;
+font-style: oblique;
+background-color: #2b2d42;
+}
+
+#timetable-external-container{
+width:80%;
+margin-left: auto;
+margin-right:auto;
+background-color: #eceada;
+
+}
+
+
+#timetable-title .first{
+color: rgb(225, 203, 59);
+
+}
+
+
+/*TIMETABLE*/
+.timetable-day{
+border-collapse:collapse;
+margin:3px;
+}
+
+.timetable-day tr{
+border-bottom: 1px solid black
+}
+
+.day , .hour , .activity{
+font-size: 0.8em;
+font-weight: 300;
+}
+
+
+
+
+
+
 
 }
 /* PHONE LAYOUT */
@@ -951,6 +1001,7 @@ hr{
  position:absolute;
  top:20%;
  left:35%;   
+ font-size:0.6em;
 }
 
 #primary-stat , #secondary-stat{
@@ -1048,5 +1099,113 @@ hr{
 	#pastrymenu{
 		width: 300px;
 	}
+
+
+  /*TIMETABLE PAGE*/
+#timetable-title h2{
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #0a82a8;
+}
+#timetable-title h3{
+font-size: 0.9em;
+text-transform: uppercase;
+font-style: oblique;
+background-color: #2b2d42;
+}
+
+#timetable-external-container{
+width:80%;
+margin-left: auto;
+margin-right:auto;
+background-color: #eceada;
+
+}
+
+
+#timetable-title .first{
+color: rgb(225, 203, 59);
+
+}
+
+
+/*TIMETABLE*/
+
+.day , .hour , .activity{
+font-size: 0.5em;
+
+
+}
+
+#timetable-container{
+grid-template-columns: repeat(2 , 1fr);
+grid-template-rows: repeat( 3 , 1fr);
+grid-area: "monday tuesday "
+           "wednesday thurday" 
+           "friday saturday";        
+
+}
+/*CONTACT US*/
+#contactus{ 
+  margin-top: 20px;
+}
+
+#contactus h2{
+  font-size: 1.2em;
+}
+
+#contactus p{
+  margin-top: 10px;
+  font-size: 0.5em;
+}
+form{
+  height: 150px;
+  width:50%
+}
+.data-text{
+  font-size: 0.4em; 
+}
+.data , .data-text{
+  padding:2px;
+  font-size: 0.4em;
+}
+#contactus-button{
+  margin-top:5px;
+}
+.contactus-send{
+  font-size:0.5em;
+}
+
+/*FOOTER*/
+
+
+#footer-container{
+  margin-top: 20px;;
+  padding-top:5px;
+  padding-bottom: 5px;
+  
+  
+}
+
+footer h4{
+  padding-left: 5px;
+  line-height: 15px;
+  font-size: 0.5em;
+  padding-left: 5px;
+  
+}
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 20px;
+}
+
+#developer{
+  margin-top: 2px;
+  font-size: 0.4em;
+}
+
 
 }
