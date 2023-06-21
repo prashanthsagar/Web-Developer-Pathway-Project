@@ -6,11 +6,11 @@
 	<title>
 		CICFC
 	</title>
-
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
-	<meta name="keywords" content="Gym,Fitness center,Gym Cork,Pool Cork,Fitness Classes,Personal trainer,Tech Gym">
+	<meta name="keywords" content="Gym,Fitness center,Gym Cork,Pool Cork,Fitness Classes,Personal Trainer,Gym Near Me,Health and Wellness">
 	<meta name="author" content="Patrick Dunne,Valentina Piano">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Bodoni:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<script src="scripts/script.js"></script>
 	<script src="https://kit.fontawesome.com/7a454b05fc.js" crossorigin="anonymous"></script>
@@ -33,7 +34,7 @@
         <img class="logo" src="images/logo.svg" width="250" height="250" alt="logo image"> 
         <nav>
 	        <a href="">Classes</a>
-			<a href="classes.html">Timetable</a>
+			<a href="timetable.html">Timetable</a>
 		
             	<a href="membership.html">Membership</a>
 		
@@ -101,15 +102,13 @@
 
 
 		<div id="trainers">
-	<br><br><br><br>	
-	<br><br><br><br>	
+	
 	<h1>MEET OUR TRAINERS</h1> 
-	<br>
+	
 	<section id="trainer-content">
 		<h3>Our staff is highly qualified, and with their motivation and expertise, will help you to achieve your fitness and wellness goals.</h3>
-		<br>
 		<h4>Click on the trainer below to find out more.</h4>
-	<br><br>
+	
 
 		<div class="row">
 			<div class="column">
@@ -185,37 +184,27 @@
 
 	</div>
 	
-	<div id="opening">
+	
 		<!-- Opening Hours -->
-		<br>
-		<br>
-		<br>
 		<hr>
-		<br>
-		<br>
-		<br>
+		<div id="opening"></div>
 		<h1>OPENING HOURS:</h1>
 		<h3>Monday to Friday: 6.00am to 10.00pm</h3>
 		<h3>Saturday, Sunday & Bank Holidays: 8.00am to 9.00pm</h3>
-		<br><br>
+		
 
 		<h2 id="isopennow"></h2>
 		<br><br>
 		<div id="enquiry-opennow">
 			<button type="button" class="button-style" onclick="OpenNow()">Open now?</button>
 		</div>
-		<br>
-		<br>
-		<hr>
-		<br>
-		<br>
-		<br>
 	</div>
+		<hr>
+	
 	
 	<div id="coffee">
 		<!-- Coffee Shop -->
-		<br><br>
-		<br><br>	
+		
 		<h1>LEE COFFEE SHOP</h1> 
 		<br>
 	    <section id="coffee-content">
@@ -261,7 +250,7 @@
 					<input type="text" class="data" id="name" name="name" required placeholder="Write your name">
 				
 					<label for="phone">Phone Number:</label>
-					<input type="tel" class="data" id="phone" name="phone" placeholder="Write your phone numnber">
+					<input type="tel" class="data" id="phone" name="phone" placeholder="Write your phone number">
 					<label for="email">Email Address:</label>
 					<input type="email" class="data" id="email" name="email" required placeholder="Write your email">
 					<label for="email">Enquiry:</label>
@@ -276,17 +265,25 @@
   	</div>
 
 <footer>
-	
+	<div id="footer-container">
 	<div id="tel-email">
-		<h4><i class="fa-solid fa-phone"></i>001 1234 567 </h4>
-		<h4><i class="fa-solid fa-envelope" ></i>admin@corkinnercitygym.ie</h4>
+		<h4>&nbsp;<i class="fa-solid fa-phone"></i>&nbsp;&nbsp;001 1234 567 </h4>
+		<h4>&nbsp;<i class="fa-solid fa-envelope" >&nbsp;&nbsp;</i>admin@corkinnercitygym.ie</h4>
 	  </div>
 	  <div id="address">
-		<h4>Address:</h4>
+		<h4>&nbsp;<i class="fa-sharp fa-solid fa-location-dot" style="color: #0a82a8;"></i>&nbsp;&nbsp;Address:</h4>
 		<h4>110 Main Street </h4>
 		<h4> C03 25DE , Cork</h4>
       </div>
-	  
+	<div id="social">
+		<div id="fac-icon"><a href="#" class="fa fa-facebook"></a></div>
+		<div id="insta-icon"><a href="#" class="fa fa-instagram"></a></div>
+    </div>  
+</div>
+<div id="developer">
+	<h5>&copy;2023 Designed and developed by Patrick Dunne and Valentina Piano</h5>
+
+</div>
 
 </footer>
 

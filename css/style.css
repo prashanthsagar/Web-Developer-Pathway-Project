@@ -5,11 +5,11 @@
 
 body {
      font-family: "Courier New", monospace;
-     background-color: #2b2d42;
+     /*background-color: #2b2d42;*/
      color:#eceada;
      background-image: linear-gradient(to bottom , rgba(53, 52, 55, 0.602), rgba(53, 52, 55, 0.602)), url(../images/concrete.avif);
-     background-repeat: no-repeat;
-     background-size: cover;
+     background-repeat: repeat;
+     background-attachment: fixed;
      background-position: top;
   }
   
@@ -22,15 +22,20 @@ body {
 /*navigation bar*/
  #navigation-bar{
   position:relative;
+  height:auto;
   
+}
+.logo{
+       width:20%;
+       height: 200px;
 }
 
 #navigation-bar nav{
  display:inline;
  letter-spacing: 2px;
  position:absolute;
- top:20%;
- left:55%;   
+ top:10%;
+ left:45%;   
  margin-left: 10px;
 
 }
@@ -135,7 +140,7 @@ body {
 
 }
 #tech-content{
-  margin-top: 100px;
+  margin-top: 60px;
   font-size: 1em;
   text-align: center;
   width: 80vw;
@@ -322,13 +327,18 @@ body {
 }
 
 /* OPENING HOURS */
+hr{
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
 
 #enquiry-opennow button{
   display: block;
    margin:auto;
 }
+
 #opening h3{
-   line-height: 40px;;
+   line-height: 40px;
 }
 #opening h1{
   margin-bottom: 20px;
@@ -340,7 +350,7 @@ body {
 .hover-effect {
       transition: transform 0.3s ease, filter 0.3s ease;
     }
-    .hover-effect:hover {
+ .hover-effect:hover {
       transform: scale(1.1);
       filter: brightness(110%);
     }
@@ -380,14 +390,11 @@ body {
 /*CONTACTUS FORM*/
 #contactus{ 
   margin-top: 100px;
-
 }
 
 #contactus h2{
   font-size: 2em;
 }
-
-
 
 #contactus p{
   margin-top: 20px;
@@ -395,9 +402,7 @@ body {
   font-weight: bold;;
 }
 
-
 form{
-  width:100%;
   height: 400px;
   width:40%;
   display:flex;
@@ -453,28 +458,20 @@ form{
 /*FOOTER*/
 .fa-solid{
   color: #0a82a8;
-  
-
-
 }
-footer{
+#footer-container{
   margin-top: 60px;;
   display:flex;
   flex-direction: row;
-  width:90%;
-  justify-content: right;
+  width:100vw;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  border-top:solid 1px #eceada ;
+  padding-top:20px;
+  padding-bottom: 10px;
   
   
-}
-#tel-email{
-  width:50%;
-  
-  
-}
-#address{
-  width:50%;
-  
-
 }
 
 footer h4{
@@ -484,9 +481,37 @@ footer h4{
   font-size: 1em;
   font-weight: 100;
   padding-left: 5px;
+  
 }
 
+.fa {
+  padding: 10px;
+  font-size: 40px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
 
+#social div{
+  display: inline;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+#developer{
+  background-color: #2b2d42;
+  text-align: right;
+  margin-top: 2px;
+}
 
 /*MEMBERSHIP SECTION*/
 #membership{
@@ -692,9 +717,7 @@ margin:auto;
 .saturday{
   grid-area: saturday ;
 }
-#timetble-day{
-  margin: 30px;
-}
+
 
 /* TABLET LAYOUT */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -747,6 +770,7 @@ margin:auto;
    
   #classes h3{
     font-size:1em;
+    
   }
   .video-container {
     position: relative;
@@ -764,7 +788,7 @@ margin:auto;
   .scrolling-text {
     color: #ffffff;/* to change*/
     font-size: 4em;/*cambiare em in desktop*/
-    top: -50%;/*altezza??* no, posizione/
+    top: -50%;
     left: 50%;
     transform: translate(-50%, -50%);/**/
    font-family: "Courier New", monospace;
@@ -781,12 +805,138 @@ margin:auto;
   100% {
     transform: translateX(-800%);
   }
+}
+ /*MEMBERSHIP PAGE*/
+ #first-slogan-content{
+  font-size: 1.6em;
+  
  
+ }
+ #second-slogan-content{
+   font-size: 0.9em;;
+
 
 }
+
+.membership-page-container{
+  margin: 30px 20px 20px 20px; 
+}
+.membership-page-style{
+     line-height: 23px;
+     font-weight: 0.7em;
 }
 
+.membership-page-style .first-membership{
+     font-size:1.2em;
+    
+           
+}
+.membership-page-style .second-membership{
+  font-size:0.6em;
+       
+}
+/*CONTACT US*/
+#contactus{ 
+  margin-top: 40px;
+}
 
+#contactus h2{
+  font-size: 1.5em;
+}
+
+#contactus p{
+  margin-top: 20px;
+  font-size: 0.7em;
+  font-weight: bold;;
+}
+form{
+  height: 300px;
+}
+.data-text{
+  font-size: 0.7em; 
+}
+.data , .data-text{
+  padding:3px;
+  font-size: 0.7em;
+}
+#contactus-button{
+  margin-top:10px;
+}
+.contactus-send{
+  font-size:0.7em;
+}
+
+/*FOOTER*/
+.fa-solid{
+  color: #0a82a8;
+  
+}
+
+#footer-container{
+  margin-top: 40px;;
+  padding-top:10px;
+  padding-bottom: 5px;
+  
+  
+}
+
+footer h4{
+  text-align: left;
+  padding-left: 10px;
+  line-height: 20px;
+  font-size: 0.6em;
+  font-weight: 100;
+  padding-left: 5px;
+  
+}
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 20px;
+}
+
+#developer{
+  background-color: #2b2d42;
+  text-align: right;
+  margin-top: 2px;
+  font-size: 0.7em;
+}
+/*COFFEE SHOP*/
+#coffee-content figcaption ,#coffee-contente h3 {
+  font-weight: bold;
+  font-size: 1em;
+}
+/*TRAINERS SECTION*/
+#trainers h1{
+   margin-bottom:20px;
+}
+#trainer-content h3{
+   margin-bottom: 15px;
+}
+#trainer-content h4{
+  margin-bottom:30px;
+}
+/*OPENING HOURS*/
+hr{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#opening h3{
+   font-weight: 1.5em;
+}
+
+/*MEMBERSHIP SECTION*/
+#membership{
+  margin-top: 40px;
+}
+.membership-style{
+     
+  margin-bottom: 20px;
+  line-height: 35px;
+}
+
+}
 /* PHONE LAYOUT */
 @media (max-width: 768px) {
   /* CSS rules for mobile devices */
