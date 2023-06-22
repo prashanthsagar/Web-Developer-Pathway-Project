@@ -507,6 +507,7 @@ footer h4{
   background: #125688;
   color: white;
 }
+
 #developer{
   background-color: #2b2d42;
   text-align: right;
@@ -516,11 +517,12 @@ footer h4{
 /*MEMBERSHIP SECTION*/
 #membership{
   margin-top: 80px;
-
 }
+
 #membership h1{
    text-transform: uppercase;
 }
+
 #membership-container{
   display:flex;
   flex-direction:row;
