@@ -71,10 +71,13 @@ function showVid(classIs) {
 
 function OpenNow(){
 	let isToday = new Date();
-	var currentDay = isToday.getDay();
+	let currentDay = isToday.getDay();
 	var currentTime = isToday.getHours() + ":" + isToday.getMinutes();
+	if (currentTime.length == 4){
+		currentTime = "0" + currentTime;
+	}
+	
 	var currentMonth = isToday.getMonth();
-	console.log (currentMonth);
 	var opennowtext = document.getElementById("isopennow");
 	var start;
 	var end;
@@ -110,10 +113,12 @@ function OpenNow(){
 		
 	}
 	
+	
 	if (currentTime >= start && currentTime <= end) {
-			opennowtext.innerHTML = "The gym is open right now.";
+			opennowtext.innerHTML = "The gym is open right now!";
 	} else {
 			opennowtext.innerHTML = "Sorry, the gym is closed right now.";
+
 	}
 	
 	if (currentDay == 1){
