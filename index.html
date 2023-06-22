@@ -6,25 +6,20 @@
 	<title>
 		CICFC
 	</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="">
-	<meta name="keywords" content="Gym,Fitness center,Gym Cork,Pool Cork,Fitness Classes,Personal Trainer,Gym Near Me,Health and Wellness,Gym Membership,Gym Timetable">
-	<meta name="author" content="Patrick Dunne,Valentina Piano">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="CORK INNER CITY FITNESS CENTRE professional gym in the heart of Cork City. We strive to create a peaceful and relaxing environment in which its members can work out and realise and achieve their fitness and wellness goals.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Valentina Piano,Patrick Dunne">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Bodoni:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 	<script src="scripts/script.js"></script>
 	<script src="https://kit.fontawesome.com/7a454b05fc.js" crossorigin="anonymous"></script>
-	
 </head>
 
 <body>
@@ -33,11 +28,13 @@
         <!--Header element-->
         <img class="logo" src="images/logo.svg" width="250" height="250" alt="logo image"> 
         <nav>
-	        <a href="">Classes</a>
-			<a href="timetable.html">Timetable</a>
-		
-            	<a href="membership.html">Membership</a>
-		
+		<a href="#facilities">Facilities</a>
+        <a href="#classes">Classes</a>
+		<a href="timetable.html">Timetable</a>
+		<a href="#trainers">Trainers</a>
+       	<a href="membership.html">Membership</a>
+		<a href="#opening">Opening Hours</a>
+		<a href="#coffee">Lee Coffee Shop</a>
             	<a href="#contactus">Contact Us</a>        
 	</nav>
     </header>
@@ -92,14 +89,14 @@
 	    <button type="button" class="classes-button-style" onclick="showVid('circuit')">Circuit Training</button>
     </div>
 	<br><br>
-	<div id="videos" style="display:flex; justify-content:center;">
+	<div id="videos" style="display:flex; justify-content:center; align:center">
 		<div class="video-container">
 			<video id="classVid" src="images/yoga.mp4" autoplay loop width="800" muted></video> 
 			<div id="classScroll" class="scrolling-text">YOGA - Connect your physical body to your mind through movements and breathing.</div>
 		</div>
 	</div>	
 </div>
-
+<hr>
 
 		<div id="trainers">
 	
@@ -109,7 +106,6 @@
 		<h3>Our staff is highly qualified, and with their motivation and expertise, will help you to achieve your fitness and wellness goals.</h3>
 		<h4>Click on the trainer below to find out more.</h4>
 	
-
 		<div class="row">
 			<div class="column">
 				<img src="images/aoife.jpg" alt="Aoife" width="200" height="200" onclick="myFunction(this);">
@@ -135,7 +131,7 @@
 		
 		<div class="container">
 <!--			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>   -->
-			<img id="expandedImg" alt="" >
+			<img id="expandedImg" src="">
 			<p class="caption" id="trainerBio"></p>
 		</div>
 
@@ -154,7 +150,7 @@
 		</div>
 		</section>
 	</div>
-
+<hr>
 	<div id="membership">
 		<h1>membership</h1>
 		 <div id="membership-container">
@@ -184,15 +180,12 @@
 
 	</div>
 	
-	
 		<!-- Opening Hours -->
 		<hr>
-		<div id="opening"></div>
+	<div id="opening">
 		<h1>OPENING HOURS:</h1>
 		<h3>Monday to Friday: 6.00am to 10.00pm</h3>
 		<h3>Saturday, Sunday & Bank Holidays: 8.00am to 9.00pm</h3>
-		
-
 		<h2 id="isopennow"></h2>
 		<br><br>
 		<div id="enquiry-opennow">
@@ -200,11 +193,8 @@
 		</div>
 	</div>
 		<hr>
-	
-	
+	<!-- Coffee Shop -->
 	<div id="coffee">
-		<!-- Coffee Shop -->
-		
 		<h1>LEE COFFEE SHOP</h1> 
 		<br>
 	    <section id="coffee-content">
@@ -235,64 +225,53 @@
             </div>
         </section>
 	</div>
+
+<hr>
 	
 	<div id="contactus">
 		<!-- Contact us etc. -->
-		
 		<h2>CONTACT US</h2>
-	
 		<p style="text-align: center;">Please enter your details below and we'll reply to you as soon as possible.</p>
-		
 		<form action="mailto:admin@corkinnercitygym.ie?subject=Contact%20Form" method="post" enctype="text/plain" target="_blank">
 			
-        		
 					<label for="name">Name:</label>
 					<input type="text" class="data" id="name" name="name" required placeholder="Write your name">
 				
 					<label for="phone">Phone Number:</label>
-					<input type="tel" class="data" id="phone" name="phone" placeholder="Write your phone number">
+					<input type="tel" class="data" id="phone" name="phone" placeholder="Write your phone numnber">
 					<label for="email">Email Address:</label>
 					<input type="email" class="data" id="email" name="email" required placeholder="Write your email">
 					<label for="email">Enquiry:</label>
-					<textarea class="data-text" id="enquiry" name="enquiry" placeholder="Write your message" rows="10"></textarea>
+					<input type="textarea" class="data-text" id="enquiry" name="enquiry" placeholder="Write your message" rows="10">
 				<div id="contactus-button">
 					<input class="contactus-send" type="reset" value="Clear">
 					<input class="contactus-send" type="submit" value="Send Email">
 			    </div>
-		
 		</form>	
-		
   	</div>
+
 
 <footer>
 	<div id="footer-container">
-	<div id="tel-email">
-		<h4>&nbsp;<i class="fa-solid fa-phone"></i>&nbsp;&nbsp;001 1234 567 </h4>
-		<h4>&nbsp;<i class="fa-solid fa-envelope" >&nbsp;&nbsp;</i>admin@corkinnercitygym.ie</h4>
-	  </div>
-	  <div id="address">
-		<h4>&nbsp;<i class="fa-sharp fa-solid fa-location-dot" style="color: #0a82a8;"></i>&nbsp;&nbsp;Address:</h4>
-		<h4>110 Main Street </h4>
-		<h4> C03 25DE , Cork</h4>
-      </div>
-	<div id="social">
-		<div id="fac-icon"><a href="#" class="fa fa-facebook"></a></div>
-		<div id="insta-icon"><a href="#" class="fa fa-instagram"></a></div>
-    </div>  
-</div>
-<div id="developer">
-	<h5>&copy;2023 Designed and developed by Patrick Dunne and Valentina Piano</h5>
-
-</div>
+		<div id="tel-email">
+			<h4>&nbsp;<i class="fa-solid fa-phone"></i>&nbsp;&nbsp;001 1234 567 </h4>
+			<h4>&nbsp;<i class="fa-solid fa-envelope" >&nbsp;&nbsp;</i>admin@corkinnercitygym.ie</h4>
+		  </div>
+		  <div id="address">
+			<h4>&nbsp;<i class="fa-sharp fa-solid fa-location-dot" style="color: #0a82a8;"></i>&nbsp;&nbsp;Address:</h4>
+			<h4>110 Main Street </h4>
+			<h4>C03 25DE, Cork</h4>
+		  </div>
+		<div id="social">
+			<div id="fac-icon"><a href="#" class="fa fa-facebook"></a></div>
+			<div id="insta-icon"><a href="#" class="fa fa-instagram"></a></div>
+		</div>  
+	</div>
+	<div id="developer">
+		<h5>&copy;2023 Designed and developed by Valentina Piano and Patrick Dunne</h5>
+	</div>
 
 </footer>
-
-
-	
-
-<script>
-
-</script>
 
 </body>
 
