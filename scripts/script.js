@@ -73,10 +73,10 @@ function OpenNow(){
 	let currentDay = isToday.getDay();
 	var currentHour = isToday.getHours()
 	var currentMinute = isToday.getMinutes()
-	if (currentHour.length = 1){
+	if (currentHour.length == 1){
 		currentHour = "0" + currentHour;
 	}
-	if (currentMinute.length = 1){
+	if (currentMinute.length == 1){
 		currentMinute = "0" + currentMinute;
 	}
 	var currentTime = currentHour + ":" + currentMinute;
