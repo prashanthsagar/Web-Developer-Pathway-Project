@@ -1,4 +1,3 @@
-
 function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
   var imgText = document.getElementById("trainerBio");
@@ -72,10 +71,15 @@ function showVid(classIs) {
 function OpenNow(){
 	let isToday = new Date();
 	let currentDay = isToday.getDay();
-	var currentTime = isToday.getHours() + ":" + isToday.getMinutes();
-	if (currentTime.length == 4){
-		currentTime = "0" + currentTime;
+	var currentHour = isToday.getHours()
+	var currentMinute = isToday.getMinutes()
+	if (currentHour.length = 1){
+		currentHour = "0" + currentHour;
 	}
+	if (currentMinute.length = 1){
+		currentMinute = "0" + currentMinute;
+	}
+	var currentTime = currentHour + ":" + currentMinute;
 	
 	var currentMonth = isToday.getMonth();
 	var opennowtext = document.getElementById("isopennow");
@@ -118,7 +122,6 @@ function OpenNow(){
 			opennowtext.innerHTML = "The gym is open right now!";
 	} else {
 			opennowtext.innerHTML = "Sorry, the gym is closed right now.";
-
 	}
 	
 	if (currentDay == 1){
