@@ -108,23 +108,23 @@
 	
 		<div class="row">
 			<div class="column">
-				<img src="images/aoife.jpg" alt="Aoife" width="200" height="200" onclick="myFunction(this);">
+				<img src="images/aoife.jpg" alt="Aoife" onclick="myFunction(this);">
 				<div class="caption">Aoife</div>
 			</div>
 			<div class="column">
-				<img src="images/geoff.jpg" alt="Geoff" width="200" height="200" onclick="myFunction(this);">
+				<img src="images/geoff.jpg" alt="Geoff" onclick="myFunction(this);">
 				<div class="caption">Geoff</div>
 			</div>
 			<div class="column">
-				<img src="images/lucy.jpg" alt="Lucy" width="200" height="200" onclick="myFunction(this);">
+				<img src="images/lucy.jpg" alt="Lucy" onclick="myFunction(this);">
 				<div class="caption">Lucy</div>
 			</div>
 			<div class="column">
-				<img src="images/clive.jpg" alt="Clive" width="200" height="200" onclick="myFunction(this);">
+				<img src="images/clive.jpg" alt="Clive" onclick="myFunction(this);">
 				<div class="caption">Clive</div>
 			</div>
 			<div class="column">
-				<img src="images/valentina.jpg" width="200" height="200" alt="Valentina" onclick="myFunction(this);">
+				<img src="images/valentina.jpg" alt="Valentina" onclick="myFunction(this);">
 				<div class="caption">Valentina</div>
 			</div>
 		</div>
@@ -204,22 +204,21 @@
 				  <br><br>
              <div id="coffee-flex">
 				<figure>
-                 <img id="barista" src="images/barista.jpg" alt="Barista making delicious coffee" title="Hover to see coffee menu" width="550" height="275">
-                 <img class="hover-effect" id="coffeemenu" src="images/coffeemenu.jpg" alt="Our coffee menu" title="Hover to see coffee menu" width="550" height="379">
+                 <img id="barista" src="images/barista.jpg" alt="Barista making delicious coffee" title="Hover to see coffee menu">
+                 <img class="hover-effect" id="coffeemenu" src="images/coffeemenu.jpg" alt="Our coffee menu" title="Hover to see coffee menu">
 				  <figcaption class="fig-caption">
-				  Whether you prefer a velvety latte, a bold <br>
-				  espresso, or a creamy cappuccino, our coffee<br>
-				  will awaken your taste buds. It's the perfect<br> 
-				  way to elevate your post-workout experience.
+				  Whether you prefer a velvety latte, <br> a bold
+				  espresso, <br> or a creamy cappuccino, our coffee<br>
+				  will awaken your taste buds. <br> It's the perfect 
+				  way to elevate <br> your post-workout experience.
                   </figcaption>
 				</figure>
 				<figure>
-				<img id="pastry" src="images/pastry.jpg" alt="Delicious pastries" title="Hover to see pastry menu" width="550" height="275">
-				<img class="hover-effect" id="pastrymenu" src="images/pastrymenu.jpg" alt="Our pastry menu" title="Hover to see pastry menu" width="550" height="379">
+				<img id="pastry" src="images/pastry.jpg" alt="Delicious pastries" title="Hover to see pastry menu">
+				<img class="hover-effect" id="pastrymenu" src="images/pastrymenu.jpg" alt="Our pastry menu" title="Hover to see pastry menu">
 				<figcaption class="fig-caption">
-				 Our freshly-baked morning pastries are an <br>
-				 affordable but luxurious treat. Made on<br> 
-				 the premises by our skilled pastry chefs.
+				 Our freshly-baked morning pastries <br> are an affordable but luxurious treat. <br> Made on 
+				 the premises  <br>by our skilled pastry chefs.
                   </figcaption>
 				</figure>
             </div>
@@ -235,14 +234,13 @@
 		<form action="mailto:admin@corkinnercitygym.ie?subject=Contact%20Form" method="post" enctype="text/plain" target="_blank">
 			
 					<label for="name">Name:</label>
-					<input type="text" class="data" id="name" name="name" required placeholder="Write your name">
-				
+					<input type="text" class="data" id="name" name="name" required placeholder="Write your name">				
 					<label for="phone">Phone Number:</label>
-					<input type="tel" class="data" id="phone" name="phone" placeholder="Write your phone numnber">
+					<input type="tel" class="data" id="phone" name="phone" placeholder="Write your phone number">
 					<label for="email">Email Address:</label>
 					<input type="email" class="data" id="email" name="email" required placeholder="Write your email">
 					<label for="email">Enquiry:</label>
-					<input type="textarea" class="data-text" id="enquiry" name="enquiry" placeholder="Write your message" rows="10">
+					<textarea class="data-text" id="enquiry" name="enquiry" placeholder="Write your message" rows="10" font-size="1em"></textarea>
 				<div id="contactus-button">
 					<input class="contactus-send" type="reset" value="Clear">
 					<input class="contactus-send" type="submit" value="Send Email">
